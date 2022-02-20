@@ -45,7 +45,8 @@ Just for convenience, below is a function to see how checkstyle may run on it:
 #  A string that represents the architecture on which this code is running.  
 #######################################
 get_architecture() {
-	local architecture=$(uname -m)
+	local architecture
+	architecture=$(uname -m)
 	
 	# Parse architecture to what is available for GitLab Runner
 	if [ "$architecture" == "x86_64" ]; then
