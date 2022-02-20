@@ -1,7 +1,10 @@
 # Checkstyle for bash
 WIP: CI tool to verify some degree of Google Style Guide for Bash compliance.
 
-[Shellcheck](https://github.com/koalaman/shellcheck) provides wonderful checks on compliance of bash code to some standard. I think it would be awesome if we can extend the segments of Bash code that are covered by some kind of automated coding style checker to the complete bash scripts, including comments/documentation. I believe some parts of the [Shell Style Guide](https://google.github.io/styleguide/shellguide.html) by Google can be verified automatically. For example, looking at the [function comments](https://google.github.io/styleguide/shellguide.html) elements, it states: `All function comments should describe the intended API behaviour using:`
+[Shellcheck](https://github.com/koalaman/shellcheck) provides wonderful checks on compliance of bash code to some standard. I think it would be awesome if we can extend the segments of Bash code that are covered by some kind of automated coding style checker to the complete bash scripts, including comments/documentation. I believe some parts of the [Shell Style Guide](https://google.github.io/styleguide/shellguide.html) by Google can be verified automatically.
+
+## Example
+Looking at the [function comments](https://google.github.io/styleguide/shellguide.html) elements, it states: `All function comments should describe the intended API behaviour using:`
 
 0. Description of the function. - The content of this description is currently not deterministically verifiable, and I have not yet found a practical NLP/AI solution. However, 
     - [ ] a checker can verify whether at least whether some description is presented in the function comments. 
