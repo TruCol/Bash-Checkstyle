@@ -1,5 +1,5 @@
 # Checkstyle for bash
-WIP: CI tool to verify some degree of Google Style Guide for Bash compliance.
+WIP: CI tool to verify some degree of Google Shell Style Guide compliance.
 
 [Shellcheck](https://github.com/koalaman/shellcheck) provides wonderful checks on compliance of bash code to some standard. I think it would be awesome if we can extend the segments of Bash code that are covered by some kind of automated coding style checker to the complete bash scripts, including comments/documentation. I believe some parts of the [Shell Style Guide](https://google.github.io/styleguide/shellguide.html) by Google can be verified automatically.
 
