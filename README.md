@@ -62,7 +62,7 @@ get_architecture() {
 
 ## Project values
 I think it is important to facilitate user freedom, I think this could be manifested by taking the following requirements in mind in the development process:
- - [ ] even though this project may start out with the "Google Style Guide for Bash", other style guides should be supported as well. 
+ - [ ] even though this project may start out with the "Google Style Guide for Bash", other style guides (e.g. the one implied by [shdoc](https://github.com/reconquest/shdoc)) should be supported as well. 
  - [ ] Users should be able to (easily) turn checks on and off.
  - [ ] Users should be able to (easily) swap out checks in a certain topic, for example in the topic of `function comments` style guide `a` might suggest option `1`, whereas style guide `b` might propose option `2`. It would be nice if people can choose style guide `a` and still opt for option 2 in the topic of `function comments`. (As long as the options are not conflicting).
 
