@@ -1,0 +1,25 @@
+# run: conda env create --file environment.yml
+# include new packages: conda env update --file environment.yml
+name: checkstyle-for-bash
+channels:
+  - conda-forge
+  - conda
+dependencies:
+- anaconda
+- conda:
+# Run python tests.
+  - pytest
+- pip
+- pip:
+# Auto generate docstrings
+  - pyment
+# Apply flake8 linting.
+  - flake8
+# Apply flake8 linting in combination with Python black formatting.
+  - flake8-black
+# Auto generate documentation.
+  - pdoc3
+# Code formatting compliance
+  - black
+# Identify and remove dead code.
+  - vulture
