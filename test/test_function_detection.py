@@ -11,11 +11,12 @@ class Test_function_detection(unittest.TestCase):
         super(Test_function_detection, self).__init__(*args, **kwargs)
         self.script_dir = self.get_script_dir()
 
-    # returns the directory of this script regardles of from which level the code is executed
+    # Returns the directory of this script regardles of from which level the
+    # code is executed.
     def get_script_dir(self):
         return os.path.dirname(__file__)
 
-    # tests unit test on add_two function of main class
+    # Tests unit test on add_two function of main class.
     def test_add_two(self):
 
         expected_result = 7
