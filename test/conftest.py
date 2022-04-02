@@ -9,7 +9,8 @@ def pytest_addoption(parser):
     command line interface (CLI).
 
     """
-    # Runs tests of main code, as well as tests pertaining to google_style_guide_tests code.
+    # Runs tests of main code, as well as tests pertaining to
+    # google_style_guide_tests code.
     parser.addoption(
         "--ggl",
         action="store_true",

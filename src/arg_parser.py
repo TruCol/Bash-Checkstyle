@@ -7,13 +7,16 @@ def parse_cli_args():
     # Instantiate the parser
     parser = argparse.ArgumentParser(description="Optional app description")
 
-    ## Include argument parsing for default code.
+    # Include argument parsing for default code.
     # Allow user to load a graph from file.
     parser.add_argument(
         "--ggl",
         dest="google_style_guide",
         action="store_true",
-        help="boolean flag, determines whether the Google Style Guide for Bash rules are followed.",
+        help=(
+            "boolean flag, determines whether the Google Style Guide for "
+            "Bash rules are followed."
+        ),
     )
 
     # Allow user to specify an infile.
