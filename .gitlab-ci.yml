@@ -1,25 +1,28 @@
 stages:
     - format
     - test
-    - release
 
 black_formatting:
   image: python:3.6
   stage: format
   
   before_script:
+    # Perform an update to make sure the system is up to date.
     - sudo apt-get update --fix-missing
+    # Download miniconda.
     - wget -q https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh; bash miniconda.sh -b -f -p $HOME/miniconda;
+    # Ensure the (mini) conda environment can be activated.
     - export PATH="$HOME/miniconda/bin:$PATH"
+    # (Re)create the environment.yml file for the repository.
     - conda env create -q -f environment.yml -n checkstyle-for-bash --force
+    # Activate the environment of the repository.
     - source activate checkstyle-for-bash
 
   script:
-    # use black on the code
-    # '--check' returns error code 1, if something needs formatting
+    # Verify the Python code is black formatting compliant.
     - black . --check --exclude '\.venv/|\.local/|\.cache/|\.git/'
+    # Verify the Python code is flake8 formatting compliant.
     - flake8 .
-
   allow_failure: false
 
 
@@ -27,5 +30,9 @@ test:pytest:36:
   stage: test
   image: python:3.6
   script:
+    # Ensure the (mini) conda environment can be activated.
+    - export PATH="$HOME/miniconda/bin:$PATH"
+    # Activate the environment of the repository.
+    - source activate checkstyle-for-bash
+    # Run the python tests.
     - python -m pytest
-
