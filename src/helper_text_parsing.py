@@ -7,7 +7,7 @@ def add_two(x):
 
 
 def get_function_line_nrs(filecontent, rules):
-    """ Returns two lists containing the starting and ending line numbers of
+    """Returns two lists containing the starting and ending line numbers of
     the functions respectively.
 
     :param filecontent: The content of the bash file that is being analysed.

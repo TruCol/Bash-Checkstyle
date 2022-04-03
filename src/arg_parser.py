@@ -26,7 +26,9 @@ def parse_cli_args():
     parser.add_argument("infile", nargs="?", type=argparse.FileType("r"))
 
     # Specify default argument values for the parser.
-    parser.set_defaults(google_style_guide=True,)
+    parser.set_defaults(
+        google_style_guide=True,
+    )
 
     # Load the arguments that are given.
     args = parser.parse_args()
