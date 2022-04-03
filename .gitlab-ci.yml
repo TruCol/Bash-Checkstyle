@@ -20,6 +20,8 @@ black_formatting:
 
   script:
     # Verify the Python code is black formatting compliant.
+    - black . --diff --exclude '\.venv/|\.local/|\.cache/|\.git/'
+    - black src/** --diff --exclude '\.venv/|\.local/|\.cache/|\.git/'
     - black . --check --exclude '\.venv/|\.local/|\.cache/|\.git/'
     # Verify the Python code is flake8 formatting compliant.
     - flake8 .
