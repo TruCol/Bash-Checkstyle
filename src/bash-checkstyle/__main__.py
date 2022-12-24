@@ -1,5 +1,5 @@
 # Entry point for this project, runs the project code and exports data if
-# export commmands are given to the cli command that invokes this script.
+# export commands are given to the cli command that invokes this script.
 
 
 # Import used functions.
@@ -11,7 +11,7 @@ from .arg_parser import parse_cli_args
 args = parse_cli_args()
 
 
-# Include trivial funciton to test main.
+# Include trivial function to test main.
 def add_two(x):
     return x + 2
 

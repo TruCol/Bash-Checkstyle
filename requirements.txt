@@ -1,0 +1,12 @@
+# This file ensures that the pre-commit service is ran every time you commit.
+# Basically it ensures people only push files to GIT that are up to standard.
+# Support parsing Json files.
+jsons
+# Generate plots.
+matplotlib
+# Allow for auto generation of type-hints during runtime.
+pyannotate
+# Run python tests.
+pytest-cov
+# Ensure the python function arguments are verified at runtime.
+typeguard

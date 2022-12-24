@@ -1,5 +1,5 @@
 class Rules:
-    """ """
+    """"""
 
     def __init__(self, ruleset=None):
         """Specifies the rules according to the given ruleset.

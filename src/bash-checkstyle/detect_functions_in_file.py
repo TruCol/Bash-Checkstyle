@@ -1,4 +1,4 @@
-# Include trivial funciton to test helper_file_edit.
+# Include trivial function to test helper_file_edit.
 from src.helper_file_edit import read_file
 from src.helper_text_parsing import get_function_line_nrs
 
@@ -8,9 +8,8 @@ def add_two(x):
 
 
 def get_functions_in_file(filepath, rules):
-    """
-    Returns a list of bash function objects consisting of the comments and bash
-    code that are found in a file.
+    """Returns a list of bash function objects consisting of the comments and
+    bash code that are found in a file.
 
     :param filepath: The path to the bash file that is read.
     """

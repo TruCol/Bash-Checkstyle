@@ -1,4 +1,4 @@
-# Include trivial funciton to test helper_file_edit.
+# Include trivial function to test helper_file_edit.
 def add_two(x):
     return x + 2
 

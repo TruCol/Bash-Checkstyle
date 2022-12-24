@@ -4,9 +4,8 @@ import argparse
 
 
 def parse_cli_args():
-    """
-    Converts command line interface arguments into python argument object.
-    """
+    """Converts command line interface arguments into python argument
+    object."""
     # Instantiate the parser
     parser = argparse.ArgumentParser(description="Optional app description")
 

@@ -3,24 +3,24 @@
 # repositories.
 
 #######################################
-# 
+#
 # Local variables:
-# 
+#
 # Globals:
 #  None.
 # Arguments:
-#   
+#
 # Returns:
-#  0 if 
-#  7 if 
+#  0 if
+#  7 if
 # Outputs:
 #  None.
 # TODO(a-t-0): change root with Global variable.
 #######################################
 # Structure:Configuration
-# Returns the GitLab installation package name that matches the architecture of the device 
+# Returns the GitLab installation package name that matches the architecture of the device
 # on which it is installed. Not every package/GitLab source repository works on each computer/architecture.
-# Currently working GitLab installation packages have only been found for the amd64 architecture and 
+# Currently working GitLab installation packages have only been found for the amd64 architecture and
 # the RaspberryPi 4b architectures have been verified.
 get_gitlab_package() {
 	architecture=$(dpkg --print-architecture)
@@ -41,7 +41,7 @@ get_gitlab_package() {
 # Arguments:
 #   Name of the GitLab repository.
 # Returns:
-#  0 if funciton was evaluated succesfull.
+#  0 if function was evaluated successful.
 #  7 if the repository was not found.
 # Outputs:
 #  None.
